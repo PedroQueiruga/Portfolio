@@ -6,7 +6,7 @@ Bem-vindo ao meu hub de projetos em análise de dados. Este espaço documenta mi
 
 ## 📝 Sobre Mim
 
-Sou cientista de dados júnior com background em física e ciência & tecnologia pela UFABC. Possuo sólidas bases matemáticas e vasta experiência na análise de grandes conjuntos de dados utilizando C++ e Python. Minha trajetória acadêmica me permitiu dominar a análise e modelagem de dados e métodos computacionais para resolver problemas de alta complexidade. Sou movido pela inovação e pela busca constante de conhecimento para trasnformar dados em soluções eficientes.
+Sou cientista de dados júnior com background em física e ciência & tecnologia pela UFABC. Possuo sólidas bases matemáticas e vasta experiência na análise de grandes conjuntos de dados utilizando C++ e Python. Minha trajetória acadêmica me permitiu dominar a análise e modelagem de dados e métodos computacionais para resolver problemas de alta complexidade. Sou movido pela inovação e pela busca constante de conhecimento para transformar dados em soluções eficientes.
 
 🤝 Vamos nos conectar? [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-gonçalves-queiruga-88514535a/)
 
@@ -14,7 +14,7 @@ Sou cientista de dados júnior com background em física e ciência & tecnologia
 
 ## 🛠️ Tecnologias e Ferramentas
 
-Abaixo, estão as principaos tecnologias utilizadas para os projetos desenvolvidos. Eles estão separados em uma estrutura de pastas de acordo com a principal ferramenta que foi utilizada, de forma a manter uma estrutura mair organizada e limpa de se visualizar. 
+Abaixo, estão as principais tecnologias utilizadas para os projetos desenvolvidos. Eles estão separados em uma estrutura de pastas de acordo com a principal ferramenta que foi utilizada, de forma a manter uma estrutura mais organizada e limpa de se visualizar. 
 | Pasta | Descrição 
 | :--- | :--- |
 | [🐍 Python](./python) | Limpeza de dados (Pandas/NumPy), análise estatística e automação.
