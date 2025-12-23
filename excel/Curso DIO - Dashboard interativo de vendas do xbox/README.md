@@ -19,7 +19,7 @@ O dashboard foi estruturado para responder a questões estratégicas, tais como:
 3. Total de vendas de assinaturas do EA Play
 4. Ganho total por tipo de assinatura (Core, standart, ultimate)
 
---
+---
 
 ## 📂 Estrutura do Arquivo
 O projeto está organizado seguindo as melhores práticas de desenvolvimento em Excel:
