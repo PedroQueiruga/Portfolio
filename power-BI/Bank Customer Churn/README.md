@@ -8,7 +8,7 @@ Este projeto tem como objetivo trabalhar com um conjunto de dados gerado artific
 
 
 
-\## 🛠️ Composição dos Dados (Data Dictionary)
+## 🛠️ Composição dos Dados (Data Dictionary)
 
 
 
