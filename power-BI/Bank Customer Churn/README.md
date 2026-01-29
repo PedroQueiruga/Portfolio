@@ -42,8 +42,6 @@ O dataset utilizado contém informações históricas de 10.000 clientes. Abaixo
 
 - **NumOfProducts (Número de Produtos):** Quantidade de serviços contratados (Ex: Conta, Poupança, Seguro).
 
-&nbsp;   - *Insight:* Geralmente, mais produtos indicam fidelidade, mas um número excessivo (3 ou 4) pode indicar venda forçada, gerando insatisfação e saída.
-
 - **IsActiveMember (Membro Ativo):** Indicador binário (1 = Sim, 0 = Não) de movimentação ou interação frequente. Clientes ativos apresentam menor risco de saída.
 
 
