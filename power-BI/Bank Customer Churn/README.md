@@ -18,67 +18,67 @@ O dataset utilizado contém informações históricas de 10.000 clientes. Abaixo
 
 \### 🆔 Dados de Identificação
 
-\* \*\*RowNumber:\*\* Índice numérico das linhas. Não possui valor analítico e foi desconsiderado na modelagem.
+- \*\*RowNumber:\*\* Índice numérico das linhas. Não possui valor analítico e foi desconsiderado na modelagem.
 
-\* \*\*CustomerId:\*\* Identificador único do cliente. Essencial para contagens distintas (`COUNTDISTINCT`) e cálculo do total de clientes.
+- \*\*CustomerId:\*\* Identificador único do cliente. Essencial para contagens distintas (`COUNTDISTINCT`) e cálculo do total de clientes.
 
-\* \*\*Surname:\*\* Sobrenome do cliente. Utilizado apenas para identificação, sem impacto direto na probabilidade de evasão.
+- \*\*Surname:\*\* Sobrenome do cliente. Utilizado apenas para identificação, sem impacto direto na probabilidade de evasão.
 
 
 
 \### 👥 Perfil Demográfico
 
-\* \*\*Geography:\*\* País de residência do cliente (França, Alemanha, Espanha). Variável chave para identificar padrões regionais de evasão.
+- \*\*Geography:\*\* País de residência do cliente (França, Alemanha, Espanha). Variável chave para identificar padrões regionais de evasão.
 
-\* \*\*Gender:\*\* Gênero do cliente. Importante para analisar se existe disparidade na taxa de saída entre homens e mulheres.
+- \*\*Gender:\*\* Gênero do cliente. Importante para analisar se existe disparidade na taxa de saída entre homens e mulheres.
 
-\* \*\*Age:\*\* Idade do cliente. Historicamente, clientes mais velhos tendem a ter maior estabilidade e menor probabilidade de churn.
+- \*\*Age:\*\* Idade do cliente. Historicamente, clientes mais velhos tendem a ter maior estabilidade e menor probabilidade de churn.
 
 
 
 \### 🏦 Relacionamento com o Banco
 
-\* \*\*Tenure (Tempo de Permanência):\*\* Quantos anos o cliente está no banco. Clientes com maior \*tenure\* tendem a ser mais leais.
+- \*\*Tenure (Tempo de Permanência):\*\* Quantos anos o cliente está no banco. Clientes com maior \*tenure\* tendem a ser mais leais.
 
-\* \*\*NumOfProducts (Número de Produtos):\*\* Quantidade de serviços contratados (Ex: Conta, Poupança, Seguro).
+- \*\*NumOfProducts (Número de Produtos):\*\* Quantidade de serviços contratados (Ex: Conta, Poupança, Seguro).
 
 &nbsp;   \* \*Insight:\* Geralmente, mais produtos indicam fidelidade, mas um número excessivo (3 ou 4) pode indicar venda forçada, gerando insatisfação e saída.
 
-\* \*\*IsActiveMember (Membro Ativo):\*\* Indicador binário (1 = Sim, 0 = Não) de movimentação ou interação frequente. Clientes ativos apresentam menor risco de saída.
+- \*\*IsActiveMember (Membro Ativo):\*\* Indicador binário (1 = Sim, 0 = Não) de movimentação ou interação frequente. Clientes ativos apresentam menor risco de saída.
 
 
 
 \### 💰 Saúde Financeira
 
-\* \*\*CreditScore:\*\* Pontuação de crédito (300-850) baseada no histórico financeiro. Clientes com scores mais altos (acima de 700) são considerados mais estáveis e menos propensos a sair.
+- \*\*CreditScore:\*\* Pontuação de crédito (300-850) baseada no histórico financeiro. Clientes com scores mais altos (acima de 700) são considerados mais estáveis e menos propensos a sair.
 
-\* \*\*Balance (Saldo Bancário):\*\* Valor disponível na conta. Clientes com saldos elevados são ativos críticos para o banco, e sua perda representa um impacto financeiro maior (High Net Worth Churn).
+- \*\*Balance (Saldo Bancário):\*\* Valor disponível na conta. Clientes com saldos elevados são ativos críticos para o banco, e sua perda representa um impacto financeiro maior (High Net Worth Churn).
 
-\* \*\*EstimatedSalary:\*\* Estimativa da renda anual. Ajuda a segmentar o comportamento de churn entre diferentes faixas de renda.
+- \*\*EstimatedSalary:\*\* Estimativa da renda anual. Ajuda a segmentar o comportamento de churn entre diferentes faixas de renda.
 
 
 
 \### 💳 Cartão de Crédito
 
-\* \*\*HasCrCard:\*\* Indica se o cliente possui cartão de crédito (1 = Sim, 0 = Não). A posse do cartão pode atuar como um fator de retenção (Lock-in).
+- \*\*HasCrCard:\*\* Indica se o cliente possui cartão de crédito (1 = Sim, 0 = Não). A posse do cartão pode atuar como um fator de retenção (Lock-in).
 
-\* \*\*Card Type:\*\* Categoria do cartão (Silver, Gold, Diamond, Platinum).
+- \*\*Card Type:\*\* Categoria do cartão (Silver, Gold, Diamond, Platinum).
 
-\* \*\*Points Earned:\*\* Pontos acumulados no programa de fidelidade. Clientes com muitos pontos tendem a pensar duas vezes antes de cancelar para não perder os benefícios.
+- \*\*Points Earned:\*\* Pontos acumulados no programa de fidelidade. Clientes com muitos pontos tendem a pensar duas vezes antes de cancelar para não perder os benefícios.
 
 
 
 \### 🎯 Métricas Alvo e Qualidade (KPIs)
 
-\* \*\*Exited (Churn):\*\* A variável alvo (Target).
+- \*\*Exited (Churn):\*\* A variável alvo (Target).
 
-&nbsp;   \* `0`: Cliente permaneceu.
+&nbsp;   - `0`: Cliente permaneceu.
 
-&nbsp;   \* `1`: Cliente saiu (Churn).
+&nbsp;   - `1`: Cliente saiu (Churn).
 
-\* \*\*Complain (Reclamação):\*\* Se o cliente registrou reclamação recente (1 = Sim). Esta variável provou ser o maior preditor de saída nesta análise.
+- \*\*Complain (Reclamação):\*\* Se o cliente registrou reclamação recente (1 = Sim). Esta variável provou ser o maior preditor de saída nesta análise.
 
-\* \*\*Satisfaction Score:\*\* Nota dada pelo cliente (1 a 5) para a resolução da reclamação. Avalia a eficácia do suporte na retenção de clientes insatisfeitos.
+- \*\*Satisfaction Score:\*\* Nota dada pelo cliente (1 a 5) para a resolução da reclamação. Avalia a eficácia do suporte na retenção de clientes insatisfeitos.
 
 
 
@@ -118,8 +118,8 @@ O relatório foi dividido em 4 páginas estratégicas para guiar a narrativa dos
 
 Um panorama executivo da situação atual.
 
-* \*\*Principais KPIs:\*\* Total de clientes, taxa de churn (20%) e taxa de perda financeira (24%)
-* \*\*Insight Crítico:\*\* A perda financeira é superior a perda de clientes, o que nos indica a saída de correntistas com saldo acima da média, ou seja, um alto patrimônio. Além disso, vemos que existe uma relação direta entre a taxa de saída e o número de produtos, o que nos indica que quanto mais produtos se tentam vender aos clientes maior se torna a probabilidade deles deixarem o banco.
+- \*\*Principais KPIs:\*\* Total de clientes, taxa de churn (20%) e taxa de perda financeira (24%)
+- \*\*Insight Crítico:\*\* A perda financeira é superior a perda de clientes, o que nos indica a saída de correntistas com saldo acima da média, ou seja, um alto patrimônio. Além disso, vemos que existe uma relação direta entre a taxa de saída e o número de produtos, o que nos indica que quanto mais produtos se tentam vender aos clientes maior se torna a probabilidade deles deixarem o banco.
 
 
 
