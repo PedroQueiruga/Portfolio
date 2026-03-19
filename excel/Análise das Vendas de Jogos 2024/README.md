@@ -1,6 +1,6 @@
 # 🎮 Steam 2024: Análise de Tendências e Performance de Mercado
 
-![Dashboard Preview]([https://github.com/PedroQueiruga/Portfolio/blob/ccf8c5b388b7a9621f7d82b732ad53f57bc90a60/excel/An%C3%A1lise%20das%20Vendas%20de%20Jogos%202024/An%C3%A1lise_vendas_jogos_steam.jpg])
+![Dashboard Preview](Análise_vendas_jogos_steam.jpg)
 
 Este projeto apresenta um Dashboard interativo desenvolvido no Microsoft Excel, focado na análise de dados reais do mercado de games na Steam durante o ano de 2024. O objetivo é transformar dados brutos em insights estratégicos sobre faturamento, qualidade e comportamento do consumidor.
 
